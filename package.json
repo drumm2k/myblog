@@ -1,0 +1,27 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "My blog, build with NextJS and markdown",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drumm2k/myblog.git"
+  },
+  "author": "Ruslan Dzyubanov <ruslandzu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drumm2k/myblog/issues"
+  },
+  "homepage": "https://github.com/drumm2k/myblog#readme",
+  "dependencies": {
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
