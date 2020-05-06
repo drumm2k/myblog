@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 import Meta from './Meta';
 
 const GlobalStyle = createGlobalStyle`
+  ${normalize}
+
   *,
   *::before,
   *::after {box-sizing:border-box;}
