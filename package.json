@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/drumm2k/myblog#readme",
   "dependencies": {
+    "gray-matter": "^4.0.2",
     "next": "^9.3.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
