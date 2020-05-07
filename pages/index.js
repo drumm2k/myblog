@@ -1,34 +1,13 @@
-import styled from 'styled-components';
-import { getPosts } from '../lib/posts';
+import Link from 'next/link';
 
-const Title = styled.h1``;
-
-export default function Index({ postsData }) {
+export default function Index() {
   return (
     <div>
-      <Title>Welcome to my website!</Title>
-      <h2>Blog</h2>
-      <ul>
-        {postsData.map(({ id, title, date, spoiler }) => (
-          <li key={id}>
-            {title}
-            <br />
-            {date}
-            <br />
-            {spoiler}
-          </li>
-        ))}
-      </ul>
+      <h1>Welcome to my website!</h1>
+
+      <Link href="/blog">
+        <a>Blog</a>
+      </Link>
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const postsData = getPosts();
-
-  return {
-    props: {
-      postsData,
-    },
-  };
 }
