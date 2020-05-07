@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { getPostsData } from '../lib/posts';
-
-const Title = styled.h1``;
+import { getAllPostsData } from '../lib/posts';
 
 export default function Index({ postsData }) {
   return (
-    <div>
+    <article>
       <h2>Blog</h2>
       <ul>
         {postsData.map(({ id, title, date, spoiler }) => (
@@ -22,12 +20,12 @@ export default function Index({ postsData }) {
       <Link href="/">
         <a>Go back</a>
       </Link>
-    </div>
+    </article>
   );
 }
 
 export async function getStaticProps() {
-  const postsData = getPostsData();
+  const postsData = getAllPostsData();
 
   return {
     props: {

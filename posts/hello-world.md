@@ -1,6 +1,6 @@
 ---
 title: 'Hello World'
-date: 'May 6 2020 23:13:00 GMT+0300'
+date: 'May 6 2020 23:13'
 spoiler: 'Welcome to my blog'
 tags: 'dev'
 ---

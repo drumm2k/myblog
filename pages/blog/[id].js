@@ -2,13 +2,13 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Post({ postData }) {
   return (
-    <div>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
+    <article>
+      <h2>{postData.title}</h2>
       {postData.date}
-    </div>
+      <br />
+      <br />
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+    </article>
   );
 }
 
@@ -21,7 +21,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id);
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
