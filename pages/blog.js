@@ -9,8 +9,11 @@ export default function Index({ postsData }) {
       <ul>
         {postsData.map(({ id, title, date, spoiler }) => (
           <li key={id}>
-            Title: <b>{title}</b> ({id})
-            <br />
+            <h3>
+              <Link href="/blog/[id]" as={`/blog/${id}`}>
+                <a>{title}</a>
+              </Link>
+            </h3>
             Date: {date}
             <br />
             {spoiler}

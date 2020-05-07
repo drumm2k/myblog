@@ -29,7 +29,8 @@ const GlobalStyle = createGlobalStyle`
    font-size: 1.8rem;
    font-weight: 400;
    line-height: 1.4;
-   color: #222;
+   color: #444140;
+   background: #f7ebe8;
   }
 
   ::selection {
@@ -41,28 +42,33 @@ const GlobalStyle = createGlobalStyle`
     outline-color: #222;
   }
 
+  h1, h2, h3, h4 {
+    color: #1e1e24;
+    font-weight: 700;
+  }
+
   h1 {
     font-size: 3.6rem;
-    font-weight: 700;
     line-height: 1.125;
   }
 
   h2 {
     font-size: 2.8rem;
-    font-weight: 700;
     line-height: 1.25;
   }
 
   h3 {
     font-size: 1.8rem;
-    font-weight: 700;
     line-height: 1.25;
   }
 
   h4 {
     font-size: 1.4rem;
-    font-weight: 700;
     line-height: 1.22;
+  }
+
+  a {
+    color: #e54b4b;
   }
 `;
 
