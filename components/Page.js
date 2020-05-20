@@ -7,7 +7,7 @@ class Page extends React.Component {
   render() {
     return (
       <>
-        <Grid />
+        {/* <Grid /> */}
         <Meta />
         <GlobalStyle />
         <Header />
