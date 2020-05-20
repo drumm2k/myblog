@@ -6,6 +6,7 @@ import NavList from './NavList';
 
 const StyledHeader = styled.header`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
@@ -20,11 +21,13 @@ const Logo = styled.a`
   font-size: 3rem;
 `;
 
-const Nav = styled.div`
-  width: 3rem;
-  height: 3rem;
+const BreakLine = styled.div`
+  flex-basis: 100%;
+  height: 0;
 
-  background-color: palegoldenrod;
+  @media (min-width: 736px) {
+    display: none;
+  }
 `;
 
 export default class Header extends React.Component {
@@ -57,8 +60,10 @@ export default class Header extends React.Component {
             toggleNav={this.toggleNav}
             navOpened={this.state.navOpened}
           />
+          <BreakLine />
+
+          <NavList navOpened={this.state.navOpened} />
         </StyledHeader>
-        <NavList navOpened={this.state.navOpened} />
       </>
     );
   }

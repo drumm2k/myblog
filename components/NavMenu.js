@@ -5,6 +5,10 @@ const Button = styled.div`
   height: 30px;
   transform: rotate(0deg);
   transition: 0.5s ease-in-out;
+
+  @media (min-width: 736px) {
+    display: none;
+  }
 `;
 
 const ButtonElem = styled.div`

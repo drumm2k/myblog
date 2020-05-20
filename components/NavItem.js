@@ -3,6 +3,10 @@ import Link from 'next/link';
 
 const Item = styled.li`
   font-weight: 700;
+
+  @media (min-width: 736px) {
+    margin-left: 1.6rem;
+  }
 `;
 
 const NavItem = (props) => {
