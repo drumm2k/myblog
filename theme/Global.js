@@ -70,14 +70,17 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .wrapper {
-    padding: 0 1.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
 
     @media(min-width: 736px) {
-      padding: 0 2.4rem;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
     }
 
     @media(min-width: 1024px) {
-      padding: 0 3.2rem;
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
     }
   }
 `;

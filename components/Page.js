@@ -1,5 +1,6 @@
 import { GlobalStyle } from '../theme/Global';
 import Meta from './Meta';
+import Header from './Header';
 import Grid from '../theme/Grid';
 
 class Page extends React.Component {
@@ -9,6 +10,7 @@ class Page extends React.Component {
         <Grid />
         <Meta />
         <GlobalStyle />
+        <Header />
         {this.props.children}
       </>
     );
