@@ -2,7 +2,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Post({ postData }) {
   return (
-    <article>
+    <article className="wrapper">
       <h2>{postData.title}</h2>
       {postData.date}
       <br />
