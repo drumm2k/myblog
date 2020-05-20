@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 import Meta from './Meta';
+import Grid from './Grid';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
@@ -70,16 +71,29 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: #e54b4b;
   }
+
+  .wrapper {
+    padding: 0 1.6rem;
+
+    @media(min-width: 736px) {
+      padding: 0 2.4rem;
+    }
+
+    @media(min-width: 1024px) {
+      padding: 0 3.2rem;
+    }
+  }
 `;
 
 class Page extends Component {
   render() {
     return (
-      <div>
+      <>
+        <Grid />
         <Meta />
         <GlobalStyle />
         {this.props.children}
-      </div>
+      </>
     );
   }
 }

@@ -4,7 +4,7 @@ import { getAllPostsData } from '../lib/posts';
 
 export default function Index({ postsData }) {
   return (
-    <article>
+    <article className="wrapper">
       <h2>Blog</h2>
       <ul>
         {postsData.map(({ id, title, date, spoiler }) => (
