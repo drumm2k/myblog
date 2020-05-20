@@ -12,15 +12,15 @@ const StyledNavList = styled.ul`
 
   &.opened {
     display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 `;
 
 export default class NavList extends React.Component {
   render() {
     return (
-      <StyledNavList className={this.props.navOpened ? 'opened' : null}>
+      <StyledNavList
+        className={this.props.navOpened ? 'opened wrapper' : 'wrapper'}
+      >
         <NavItem url={'/blog'} name={'Blog'} />
         <NavItem url={'/blog'} name={'Blog'} />
         <NavItem url={'/blog'} name={'Blog'} />
