@@ -1,11 +1,10 @@
-import styled from 'styled-components';
 import Link from 'next/link';
 import { getAllPostsData } from '../lib/posts';
 import Post from '../components/Post';
 
 export default function Index({ postsData }) {
   return (
-    <article className="wrapper">
+    <article>
       <h2>Blog</h2>
       <ul>
         {postsData.map(({ id, title, date, spoiler }) => (

@@ -14,7 +14,7 @@ const Button = styled.div`
 const ButtonElem = styled.div`
   display: block;
   position: absolute;
-  height: 3px;
+  height: 2px;
   width: 100%;
   background: #000;
   opacity: 1;

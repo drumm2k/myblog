@@ -11,14 +11,14 @@ const StyledHeader = styled.header`
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
   align-items: center;
-  background: #fff;
 `;
 
 const Logo = styled.a`
   width: 4rem;
   height: 4rem;
-  background-color: palegoldenrod;
+  background-color: deepskyblue;
   font-size: 3rem;
+  border-bottom: none;
 `;
 
 const BreakLine = styled.div`

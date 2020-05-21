@@ -11,7 +11,7 @@ class Page extends React.Component {
         <Meta />
         <GlobalStyle />
         <Header />
-        {this.props.children}
+        <div className="wrapper">{this.props.children}</div>
       </>
     );
   }

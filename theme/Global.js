@@ -28,7 +28,8 @@ export const GlobalStyle = createGlobalStyle`
    font-weight: 400;
    line-height: 1.4;
    color: #444140;
-   background: #f7ebe8;
+   text-rendering: optimizeLegibility;
+   background: #fff;
   }
 
   ::selection {
@@ -66,7 +67,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: #e54b4b;
+    color: #555;
+  }
+
+  a:hover {
+    color: #222;
   }
 
   .wrapper {
