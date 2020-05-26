@@ -26,14 +26,14 @@ export const GlobalStyle = createGlobalStyle`
    font-family: 'Noah', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
    font-size: 1.8rem;
    font-weight: 400;
-   line-height: 1.5;
+   line-height: 1.6;
    letter-spacing: -0.01em;
    color: ${({ theme }) => theme.colors.text};
    text-rendering: optimizeLegibility;
    background: ${({ theme }) => theme.colors.bg};
 
    @media(min-width: 736px) {
-      font-size: 2.1rem;
+      font-size: 2rem;
     }
   }
 
@@ -49,26 +49,19 @@ export const GlobalStyle = createGlobalStyle`
   h1, h2, h3, h4 {
     color: ${({ theme }) => theme.colors.black};
     font-weight: 700;
+    line-height: 1.2;
   }
 
   h1 {
     font-size: 3.4rem;
-    line-height: 1.125;
   }
 
   h2 {
     font-size: 2.8rem;
-    line-height: 1.25;
   }
 
   h3 {
     font-size: 2.2rem;
-    line-height: 1.25;
-  }
-
-  h4 {
-    font-size: 1.8rem;
-    line-height: 1.22;
   }
 
   a {
@@ -84,7 +77,7 @@ export const GlobalStyle = createGlobalStyle`
 
     @media(min-width: 736px) {
       padding: 2.4rem;
-      max-width: 960px;
+      max-width: 800px;
       margin: 0 auto;
     }
   }

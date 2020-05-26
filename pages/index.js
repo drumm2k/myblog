@@ -1,7 +1,7 @@
 export default function Index() {
   return (
     <section>
-      <h1>Welcome to my website!</h1>
+      <h2>Welcome to my website!</h2>
 
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
