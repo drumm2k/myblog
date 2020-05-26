@@ -4,7 +4,7 @@ import Router from 'next/router';
 import NavMenu from './NavMenu';
 import NavList from './NavList';
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,11 +14,24 @@ const StyledHeader = styled.header`
 `;
 
 const Logo = styled.a`
-  width: 4rem;
-  height: 4rem;
-  background-color: deepskyblue;
-  font-size: 3rem;
+  color: ${({ theme }) => theme.colors.black};
+  font-size: 3.2rem;
+  font-weight: 700;
   border-bottom: none;
+
+  :hover {
+    text-decoration: none;
+  }
+
+  :after {
+    content: '';
+    display: inline-block;
+    border-radius: 3px;
+    margin-left: 2px;
+    height: 3px;
+    width: 20px;
+    background: ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 const BreakLine = styled.div`
@@ -53,7 +66,7 @@ export default class Header extends React.Component {
       <>
         <StyledHeader className="wrapper">
           <Link href="/">
-            <Logo />
+            <Logo>MyBlog</Logo>
           </Link>
 
           <NavMenu

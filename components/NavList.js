@@ -7,7 +7,7 @@ const StyledNavList = styled.ul`
   text-align: center;
   display: none;
   flex-direction: column;
-  background: #fff;
+  background: ${({ theme }) => theme.colors.bg};
   width: 100%;
   top: 72px;
   left: 0;
@@ -23,6 +23,7 @@ const StyledNavList = styled.ul`
     flex-direction: row;
     top: 0;
     width: auto;
+    background: inherit;
   }
 `;
 

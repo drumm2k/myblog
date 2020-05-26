@@ -2,11 +2,11 @@ import Link from 'next/link';
 
 const Post = (props) => (
   <li key={props.id}>
-    <h3>
+    <div>
       <Link href="/blog/[id]" as={`/blog/${props.id}`}>
         <a>{props.title}</a>
       </Link>
-    </h3>
+    </div>
     Date: {props.date}
     <br />
     {props.spoiler}

@@ -13,6 +13,15 @@ const Item = styled.li`
     margin-left: 1.6rem;
     border-bottom: none;
   }
+
+  a {
+    color: ${({ theme }) => theme.colors.black};
+  }
+
+  a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
 `;
 
 const NavItem = (props) => {

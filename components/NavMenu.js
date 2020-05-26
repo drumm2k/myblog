@@ -16,7 +16,7 @@ const ButtonElem = styled.div`
   position: absolute;
   height: 2px;
   width: 100%;
-  background: #000;
+  background: ${({ theme }) => theme.colors.black};
   opacity: 1;
   left: 0;
   transform: rotate(0deg);

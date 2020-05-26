@@ -23,13 +23,18 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-   font-family: sans-serif;
+   font-family: 'Noah', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
    font-size: 1.8rem;
    font-weight: 400;
-   line-height: 1.4;
-   color: #444140;
+   line-height: 1.5;
+   letter-spacing: -0.01em;
+   color: ${({ theme }) => theme.colors.text};
    text-rendering: optimizeLegibility;
-   background: #fff;
+   background: ${({ theme }) => theme.colors.bg};
+
+   @media(min-width: 736px) {
+      font-size: 2.1rem;
+    }
   }
 
   ::selection {
@@ -42,12 +47,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4 {
-    color: #1e1e24;
+    color: ${({ theme }) => theme.colors.black};
     font-weight: 700;
   }
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     line-height: 1.125;
   }
 
@@ -57,21 +62,21 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     line-height: 1.25;
   }
 
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 1.22;
   }
 
   a {
-    color: #555;
+    color: ${({ theme }) => theme.colors.link};
   }
 
   a:hover {
-    color: #222;
+    text-decoration: underline;
   }
 
   .wrapper {
@@ -79,10 +84,8 @@ export const GlobalStyle = createGlobalStyle`
 
     @media(min-width: 736px) {
       padding: 2.4rem;
-    }
-
-    @media(min-width: 1024px) {
-      padding: 3.2rem;
+      max-width: 960px;
+      margin: 0 auto;
     }
   }
 `;

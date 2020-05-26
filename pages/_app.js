@@ -1,14 +1,28 @@
 import App from 'next/app';
+import { ThemeProvider } from 'styled-components';
 import Page from '../components/Page';
+
+const theme = {
+  colors: {
+    black: '#000',
+    primary: '#735CDD',
+    secondary: '#F7F0F0',
+    bg: '#fff',
+    link: '#735CDD',
+    text: '#464646',
+  },
+};
 
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props;
 
     return (
-      <Page>
-        <Component {...pageProps} />
-      </Page>
+      <ThemeProvider theme={theme}>
+        <Page>
+          <Component {...pageProps} />
+        </Page>
+      </ThemeProvider>
     );
   }
 }
