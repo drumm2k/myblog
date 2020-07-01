@@ -1,15 +1,15 @@
 import Link from 'next/link';
 
 const Post = (props) => (
-  <li key={props.id}>
+  <li key={props.link}>
     <div>
-      <Link href="/blog/[id]" as={`/blog/${props.id}`}>
+      <Link href={props.link}>
         <a>{props.title}</a>
       </Link>
     </div>
-    Date: {props.date}
-    <br />
-    {props.spoiler}
+    <p>Date: {props.date}</p>
+    <p>{props.description}</p>
+    <p>Tags: {props.tags}</p>
   </li>
 );
 
