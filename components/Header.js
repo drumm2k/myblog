@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import Router from 'next/router';
-import NavMenu from './NavMenu';
 import NavList from './NavList';
 
 const StyledHeader = styled.div`
@@ -21,15 +20,6 @@ const Logo = styled.a`
 
   :hover {
     text-decoration: none;
-  }
-`;
-
-const BreakLine = styled.div`
-  flex-basis: 100%;
-  height: 0;
-
-  @media (min-width: 736px) {
-    display: none;
   }
 `;
 
@@ -59,13 +49,7 @@ export default class Header extends React.Component {
             <Logo>MyBlog</Logo>
           </Link>
 
-          <NavMenu
-            toggleNav={this.toggleNav}
-            navOpened={this.state.navOpened}
-          />
-          <BreakLine />
-
-          <NavList navOpened={this.state.navOpened} />
+          <NavList />
         </StyledHeader>
       </>
     );
