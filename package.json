@@ -7,7 +7,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,19 +20,19 @@
   },
   "homepage": "https://github.com/drumm2k/myblog#readme",
   "dependencies": {
-    "date-fns": "^2.13.0",
+    "@mdx-js/loader": "^1.6.6",
+    "@next/mdx": "^9.4.4",
     "gray-matter": "^4.0.2",
-    "next": "^9.4.1",
+    "next": "^9.4.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "remark": "^12.0.0",
     "remark-html": "^11.0.2",
-    "styled-components": "^5.1.0",
+    "styled-components": "^5.1.1",
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@storybook/react": "^5.3.18",
+    "@babel/core": "^7.10.4",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7"
   }

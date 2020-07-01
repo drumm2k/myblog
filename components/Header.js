@@ -22,16 +22,6 @@ const Logo = styled.a`
   :hover {
     text-decoration: none;
   }
-
-  :after {
-    content: '';
-    display: inline-block;
-    border-radius: 3px;
-    margin-left: 2px;
-    height: 3px;
-    width: 20px;
-    background: ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 const BreakLine = styled.div`

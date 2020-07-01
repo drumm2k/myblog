@@ -14,6 +14,10 @@ const Item = styled.li`
     border-bottom: none;
   }
 
+  &:last-child {
+    border-bottom: none;
+  }
+
   a {
     color: ${({ theme }) => theme.colors.black};
   }

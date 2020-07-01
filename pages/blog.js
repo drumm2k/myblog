@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { getAllPostsData } from '../lib/posts';
 import Post from '../components/Post';
 
@@ -11,9 +10,6 @@ export default function Index({ postsData }) {
           <Post key={id} id={id} title={title} date={date} spoiler={spoiler} />
         ))}
       </ul>
-      <Link href="/">
-        <a>Go back</a>
-      </Link>
     </article>
   );
 }
