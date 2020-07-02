@@ -3,15 +3,12 @@ import Link from 'next/link';
 
 const Item = styled.li`
   display: inline-block;
-
-  height: 4.8rem;
-  line-height: 4.8rem;
-
   margin: 0;
-  margin-left: 1.6rem;
+  margin-left: 1rem;
   border-bottom: none;
 
   a {
+    padding: 0.5rem;
     color: ${({ theme }) => theme.colors.black};
   }
 

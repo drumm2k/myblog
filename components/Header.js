@@ -7,14 +7,14 @@ const StyledHeader = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 1.6rem;
-  padding-bottom: 1.6rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   align-items: center;
 `;
 
 const Logo = styled.a`
   color: ${({ theme }) => theme.colors.black};
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 700;
   border-bottom: none;
 

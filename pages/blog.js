@@ -22,13 +22,3 @@ export default function Index() {
     </article>
   );
 }
-
-// export async function getStaticProps() {
-//   const postsData = getAllPostsData();
-
-//   return {
-//     props: {
-//       postsData,
-//     },
-//   };
-// }

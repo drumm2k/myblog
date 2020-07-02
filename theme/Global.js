@@ -19,12 +19,12 @@ export const GlobalStyle = createGlobalStyle`
   img{max-width:100%;}
 
   html {
-   font-size: 10px;
+    font-size: 16px;
   }
 
   body {
    font-family: 'Noah', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-   font-size: 1.8rem;
+   font-size: 1.2rem;
    font-weight: 400;
    line-height: 1.6;
    letter-spacing: -0.01em;
@@ -33,7 +33,7 @@ export const GlobalStyle = createGlobalStyle`
    background: ${({ theme }) => theme.colors.bg};
 
    @media(min-width: 736px) {
-      font-size: 2rem;
+      font-size: 1.4rem;
     }
   }
 
@@ -53,15 +53,24 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 3.4rem;
+    font-size: 2rem;
+    @media(min-width: 736px) {
+      font-size: 2.2rem;
+    }
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
+    @media(min-width: 736px) {
+      font-size: 2rem;
+    }
   }
 
   h3 {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
+    @media(min-width: 736px) {
+      font-size: 1.6rem;
+    }
   }
 
   a {
@@ -76,7 +85,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 1.6rem;
 
     @media(min-width: 736px) {
-      padding: 2.4rem;
+      padding: 1.6rem;
       max-width: 800px;
       margin: 0 auto;
     }
