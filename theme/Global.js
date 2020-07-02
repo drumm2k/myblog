@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-   font-family: 'Noah', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   font-family: 'Noah', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
    font-size: 1.8rem;
    font-weight: 400;
    line-height: 1.6;

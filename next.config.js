@@ -1,6 +1,9 @@
+const rehypePrism = require('@mapbox/rehype-prism');
 const withMDX = require('@next/mdx')({
-  extension: /\.mdx?$/,
-  pageExtensions: ['js', 'jsx', 'mdx'],
+  extension: /\.(md|mdx)?$/,
+  options: {
+    hastPlugins: [rehypePrism],
+  },
 });
 const withImages = require('next-images');
 

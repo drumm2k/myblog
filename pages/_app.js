@@ -1,6 +1,7 @@
 import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
 import Page from '../components/Page';
+import '../lib/highlight.css';
 
 const theme = {
   colors: {
